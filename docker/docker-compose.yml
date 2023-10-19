@@ -1,6 +1,6 @@
 version: "3.3"
 services:
-  text-generation-webui:
+  webui:
     build:
       context: .
       args:
@@ -29,5 +29,5 @@ services:
         reservations:
           devices:
             - driver: nvidia
-              device_ids: ['0']
+              device_ids: ['1']
               capabilities: [gpu]
