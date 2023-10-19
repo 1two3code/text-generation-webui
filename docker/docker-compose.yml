@@ -17,12 +17,12 @@ services:
     volumes:
       - ./characters:/app/characters
       - ./extensions:/app/extensions
-      - ./loras:/app/loras
-      - ./models:/app/models
+      - /media/hyperx/llm/loras:/app/loras
+      - /media/hyperx/llm/models:/app/models
       - ./presets:/app/presets
       - ./prompts:/app/prompts
       - ./softprompts:/app/softprompts
-      - ./training:/app/training
+      - /media/hyperx/llm/training:/app/training
       - ./cloudflared:/etc/cloudflared
     deploy:
       resources:
